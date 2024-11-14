@@ -1,0 +1,37 @@
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-background {
+    background: linear-gradient(270deg, #C4C68A,#C4C68A, #C4C68A,#C4C68A);
+    background-size: 290% 290%;
+    animation: gradient-animation 20s ease infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes gradient-animation-err{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-background-err {
+    background: linear-gradient(270deg, #ffd9d9, #ffafaf, #ff6e6e, #ff4747);
+    background-size: 290% 290%;
+    animation: gradient-animation-err 10s ease infinite;
+    animation-fill-mode: forwards;
+}
